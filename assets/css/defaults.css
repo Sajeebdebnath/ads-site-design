@@ -55,8 +55,8 @@ html::-webkit-scrollbar-track {
 
 body {
   font-size: var(--normalFont);
-  color: var(--bgColor);
-  font-family: var(--fontFamily);
+  color: var(--textColor);
+  font-family: var(--fontFamily2);
   font-weight: regular;
 }
 h1,
@@ -79,13 +79,16 @@ p {
 }
 a {
   text-decoration: none;
+  color: var(--textColor);
+}
+a:hover {
   color: var(--bgColor);
 }
 
 .btn {
   text-decoration: none;
   font-size: var(--normalFont);
-  font-family: var(--fontFamily);
+  font-family: var(--fontFamily2);
   display: inline-block;
   transition: 0.3s;
   padding: 10px 15px;
@@ -113,4 +116,18 @@ a {
 }
 .section-padding {
   padding: var(--sectionPadding);
+}
+.section-title {
+  text-align: center;
+}
+
+.section-title h2 {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--bgColor2);
+  margin-bottom: 15px;
+}
+
+.section-title p {
+  font-size: 20px;
 }

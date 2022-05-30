@@ -14,3 +14,243 @@
 
 /* ------------------------- Home Start --------------------- */
 /* ------------------------- Header Section CSS Start --------------------- */
+.header-top-wrapper .logo-and-languages {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-top-wrapper {
+  width: 100%;
+  padding: 15px 0;
+}
+
+.header-area {
+  background: var(--bgColor4);
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+}
+.logo-and-languages .logo img {
+  width: 100px;
+  height: 40px;
+  margin-left: -10px;
+}
+
+.header-top-wrapper .logo-and-languages .language-selection {
+  color: #000000f5;
+  font-family: "PT Sans Pro Light";
+  font-weight: 600;
+}
+
+.header-top-wrapper .logo-and-languages .language-selection span {
+  margin: 0 5px;
+}
+
+.header-top-wrapper .logo-and-languages .language-selection span:nth-child(1) {
+  color: #18b75d;
+}
+.menu-area .main-menu ul {
+  display: flex;
+  gap: 30px;
+}
+
+.menu-area .main-menu ul li a {
+  font-size: 16px;
+  transition: 0.3s;
+  text-transform: uppercase;
+  color: #644f9ccf;
+  font-family: var(--fontFamily3);
+  font-weight: 600;
+}
+
+.menu-area .main-menu ul li a:hover {
+  color: var(--bgColor);
+}
+
+.header-top-wrapper .menu-area {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.login-signup-menu .auth-link.active {
+  background: var(--bgColor);
+  border-radius: 15px;
+  padding: 5px 20px;
+  color: white;
+  box-shadow: 0px 2px 2px #808080a6;
+}
+
+.login-signup-menu {
+  background: white;
+  padding: 10px 15px;
+  border-radius: 25px;
+  display: flex;
+  gap: 20px;
+  box-shadow: 0px 2px 2px #808080a6;
+  text-transform: uppercase;
+  align-items: center;
+}
+
+.login-signup-menu .auth-link {
+  padding-left: 10px;
+}
+/* ------------------------- Header Section CSS End --------------------- */
+
+/* ------------------------- Hero Section CSS STart --------------------- */
+.hero-area {
+  width: 100%;
+  height: 100vh;
+  background: var(--bgColor4);
+}
+.hero-content-bg {
+  width: 100%;
+  background-color: white;
+  height: 300px;
+}
+
+.hero-aea-text .title {
+  font-size: 30px;
+  font-weight: 600;
+  color: var(--bgColor2);
+  margin-bottom: 15px;
+}
+.hero-aea-text .sub-text {
+  font-size: 20px;
+}
+/* ------------------------- Hero Section CSS End --------------------- */
+
+/* ------------------------- Service Section CSS Start --------------------- */
+
+.service-tem {
+  margin-top: 40px;
+  text-align: center;
+}
+
+.service-tem .service-icon {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background-color: var(--bgColor4);
+  border-radius: 50%;
+  font-size: 60px;
+  line-height: 150px;
+  text-align: center;
+  color: #1d4999;
+  box-shadow: 1px 0px 7px 0px #80808096;
+}
+
+.service-text-btn p {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.service-text-btn .btn.service {
+  border: none;
+  background: var(--bgColor2);
+  color: white;
+  border-radius: 25px;
+  padding: 9px 35px;
+  width: 60%;
+}
+/* ------------------------- Service Section CSS End --------------------- */
+
+/* ------------------------- Impression Section CSS Start --------------------- */
+.impression-area {
+  background: var(--bgColor2);
+}
+
+.single-impression-item {
+  text-align: center;
+  height: 250px;
+  background: white;
+  width: 250px;
+  margin: auto;
+  border-radius: 50%;
+  position: relative;
+  margin-top: 25px;
+  box-shadow: 1px 0px 7px 0px #020202c2;
+}
+
+.impression-area .section-title h2 {
+  color: white;
+}
+
+.single-impression-item .impression-text {
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  margin-top: -45px;
+  text-align: center;
+  width: 100%;
+}
+
+.single-impression-item .impression-text .title {
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--textColor2);
+}
+
+.single-impression-item .impression-text p {
+  font-size: 20px;
+  color: var(--textColor2);
+}
+.single-impression-item.impression {
+  background: transparent;
+  box-shadow: none;
+  border: 2px dashed white;
+}
+
+.single-impression-item.status .title,
+.single-impression-item.status p {
+  color: var(--bgColor2);
+}
+
+.single-impression-item.publisher {
+  background: #ff6f00ab;
+}
+/* ------------------------- Impression Section CSS End --------------------- */
+
+/* ------------------------- Footer Section CSS Start --------------------- */
+.footer-area {
+  background: var(--textColor2);
+  padding: 40px 0;
+}
+
+.footer-social img {
+  width: 35px;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-menu-area .footer-title {
+  font-size: 16px;
+  color: var(--bgColor2);
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.footer-menu-area .footer-menu ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-menu-area .footer-menu ul li a {
+  font-weight: 600;
+  color: var(--textColor);
+  font-size: 16px;
+}
+
+.footer-menu .logo {
+  margin-left: -8px;
+}
+.footer-menu-area .footer-menu.support ul li a {
+  font-weight: 400;
+}
+/* ------------------------- Footer Section CSS End --------------------- */
