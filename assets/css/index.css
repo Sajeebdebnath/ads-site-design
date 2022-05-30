@@ -109,6 +109,9 @@
   width: 100%;
   background-color: white;
   height: 300px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .hero-aea-text .title {
@@ -127,6 +130,7 @@
 .service-tem {
   margin-top: 40px;
   text-align: center;
+  padding: 15px;
 }
 
 .service-tem .service-icon {
@@ -156,6 +160,79 @@
   width: 60%;
 }
 /* ------------------------- Service Section CSS End --------------------- */
+
+/* ------------------------- Ads Format Section CSS Start --------------------- */
+.ads-format-area {
+  background: var(--bgColor4);
+}
+
+.ads-format-area-wrapper .ads-format-type ul {
+  display: flex;
+  gap: 30px;
+}
+
+.ads-format-area-wrapper .ads-format-type .ads-format {
+  box-shadow: rgb(128 128 128 / 65%) 1px 2px 4px;
+  width: 23%;
+  padding: 9px 20px;
+  font-size: 16px;
+  border-radius: 25px;
+}
+
+.ads-format-area-wrapper {
+  margin-top: 25px;
+}
+
+.ads-format-area-wrapper .ads-format-type .ads-format.active {
+  background: #cc6433c7;
+  color: var(--textColor2);
+}
+
+.ads-format-area-wrapper .ads-format-type {
+  margin-bottom: 25px;
+}
+
+.ads-format-details .single-ads-format-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 100px;
+  align-items: center;
+}
+
+.ads-format-details .single-ads-format-item .ads-format-bg {
+  width: 550px;
+  background-color: var(--bgColor2);
+  height: 270px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.ads-format-details {
+  margin-top: 60px;
+}
+
+.ads-format-details .ads-format-text .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #dd591b;
+}
+
+.ads-format-details .ads-format-text p {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.ads-format-text {
+  width: 60%;
+}
+
+.ads-format-text .ads-btn {
+  color: var(--bgColor2);
+  font-weight: 600;
+  font-size: 16px;
+}
+/* ------------------------- Ads Format Section CSS End --------------------- */
 
 /* ------------------------- Impression Section CSS Start --------------------- */
 .impression-area {
