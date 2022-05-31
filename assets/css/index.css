@@ -107,6 +107,7 @@
 }
 .hero-content-bg {
   width: 100%;
+  background-image: url(https://cdni.iconscout.com/illustration/premium/thumb/business-advertising-1946866-1649377.png);
   background-color: white;
   height: 300px;
   background-size: cover;
@@ -211,6 +212,10 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRL0mxN5iQFJSepNkbZN4rPeM1mMbfJh8EPIXA2CEaW32y74ParEokpnhkrL7iyGsUjqQE&usqp=CAU);
+}
+.single-ads-format-item:nth-child(2) .ads-format-bg {
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQRR01k_in9SiiOaoFq4nFYULaXV4EqungYdgaSQJ70wCcqQndbtRGFCLr9IvME8dNavSc&usqp=CAU);
 }
 
 .ads-format-details {
