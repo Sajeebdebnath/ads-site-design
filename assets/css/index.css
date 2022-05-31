@@ -170,13 +170,15 @@
   display: flex;
   gap: 30px;
 }
-
+.ads-format-area-wrapper .ads-format-type ul li {
+  width: 20%;
+}
 .ads-format-area-wrapper .ads-format-type .ads-format {
   box-shadow: rgb(128 128 128 / 65%) 1px 2px 4px;
-  width: 23%;
   padding: 9px 20px;
   font-size: 16px;
   border-radius: 25px;
+  width: 100%;
 }
 
 .ads-format-area-wrapper {
@@ -193,10 +195,13 @@
 }
 
 .ads-format-details .single-ads-format-item {
-  display: flex;
+  display: none;
   justify-content: space-between;
   gap: 100px;
   align-items: center;
+}
+.ads-format-details .single-ads-format-item.active {
+  display: flex;
 }
 
 .ads-format-details .single-ads-format-item .ads-format-bg {
@@ -289,6 +294,101 @@
   background: #ff6f00ab;
 }
 /* ------------------------- Impression Section CSS End --------------------- */
+
+/* ------------------------- Testimonial Section CSS Start --------------------- */
+.single-testimonial-item-wrapper {
+  border: 1px dotted var(--bgColor);
+  border-radius: 10px;
+  padding: 10px;
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.single-testimonial-item {
+  width: 100%;
+  background: white;
+  padding: 10px;
+  border-radius: 20px;
+  box-shadow: 4px 2px 13px 3px #cdc8c8bf;
+  margin: 10px 0;
+  margin-bottom: 35px;
+}
+
+.single-testimonial-item-wrapper .testimonial-bg {
+  height: 180px;
+  background: var(--bgColor4);
+  width: 220px;
+}
+
+.testimonial-items-wrapper {
+  padding-top: 35px;
+}
+
+.testimonial-text .title {
+  font-size: 20px;
+  color: var(--bgColor2);
+  margin-bottom: 15px;
+}
+
+.testimonial-text .sub-text {
+  font-size: 20px;
+  color: var(--bgColor2);
+}
+.testimonial-area {
+  background: var(--bgColor4);
+  margin-bottom: 20px;
+  padding-bottom: 90px;
+}
+.testimonial-items-wrapper.owl-carousel .owl-nav {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: flex;
+  gap: 20px;
+  margin-left: -50px;
+  margin-bottom: -35px;
+  text-align: center;
+  color: var(--bgColor2);
+}
+
+.testimonial-items-wrapper.owl-carousel .owl-nav button {
+  width: 40px;
+  height: 40px;
+  background: white;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  line-height: 40px;
+  transition: 0.3s;
+}
+
+.testimonial-items-wrapper.owl-carousel .owl-nav button:hover {
+  background: var(--bgColor2);
+  color: white;
+}
+
+.testimonial-items-wrapper.owl-carousel .owl-dots {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  display: flex;
+  gap: 5px;
+  margin-left: -40px;
+}
+
+.testimonial-items-wrapper.owl-carousel .owl-dots .owl-dot {
+  width: 15px;
+  height: 5px;
+  background: #b8c8e6;
+  border-radius: 5px;
+}
+
+.testimonial-items-wrapper.owl-carousel .owl-dots .owl-dot.active {
+  width: 20px;
+  background: var(--bgColor2);
+}
+/* ------------------------- Testimonial Section CSS End --------------------- */
 
 /* ------------------------- Footer Section CSS Start --------------------- */
 .footer-area {

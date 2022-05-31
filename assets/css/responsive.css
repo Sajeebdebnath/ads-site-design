@@ -12,10 +12,44 @@
 
 /*  MD Tablet desktop :768px. */
 @media (min-width: 768px) and (max-width: 991px) {
+  .ads-format-details .single-ads-format-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 35px;
+  }
+  .ads-format-details .single-ads-format-item .ads-format-bg {
+    width: 100%;
+  }
 }
 
 /* small mobile :320px. */
 @media (max-width: 767px) {
+  .ads-format-details .single-ads-format-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 50px;
+  }
+  .ads-format-area-wrapper .ads-format-type ul {
+    gap: 10px;
+  }
+  .ads-format-area-wrapper .ads-format-type ul li {
+    width: auto;
+  }
+  .ads-format-area-wrapper .ads-format-type .ads-format {
+    font-size: 12px;
+  }
+  .ads-format-details .single-ads-format-item .ads-format-bg {
+    width: 100%;
+  }
+  .footer-menu-area {
+    margin: auto;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .footer-social {
+    justify-content: center;
+  }
 }
 
 /* Large Mobile :480px. */

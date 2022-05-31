@@ -22,6 +22,11 @@
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css
+    "
+    />
     <link rel="stylesheet" href="assets/css/defaults.css" />
     <link rel="stylesheet" href="assets/css/index.css" />
     <link rel="stylesheet" href="assets/css/responsive.css" />
@@ -150,21 +155,134 @@
           <div class="col-lg-12">
             <div class="ads-format-area-wrapper">
               <div class="ads-format-type">
-                <ul>
-                  <li class="btn btn-main ads-format active">POP-UNDER</li>
-                  <li class="btn btn-main ads-format">BANNER AD</li>
-                  <li class="btn btn-main ads-format">NATIVE</li>
-                  <li class="btn btn-main ads-format">SKIM</li>
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                  <li role="presentation">
+                    <button
+                      class="btn btn-main ads-format active"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#home"
+                      type="button"
+                      role="tab"
+                      aria-controls="home"
+                      aria-selected="true"
+                    >
+                      POP-UNDER
+                    </button>
+                  </li>
+                  <li role="presentation">
+                    <button
+                      class="btn btn-main ads-format"
+                      id="profile-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#profile"
+                      type="button"
+                      role="tab"
+                      aria-controls="profile"
+                      aria-selected="false"
+                    >
+                      BANNER AD
+                    </button>
+                  </li>
+                  <li role="presentation">
+                    <button
+                      class="btn btn-main ads-format"
+                      id="messages-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#messages"
+                      type="button"
+                      role="tab"
+                      aria-controls="messages"
+                      aria-selected="false"
+                    >
+                      NATIVE
+                    </button>
+                  </li>
+                  <li role="presentation">
+                    <button
+                      class="btn btn-main ads-format"
+                      id="settings-tab"
+                      data-bs-toggle="tab"
+                      data-bs-target="#settings"
+                      type="button"
+                      role="tab"
+                      aria-controls="settings"
+                      aria-selected="false"
+                    >
+                      SKIM
+                    </button>
+                  </li>
                 </ul>
               </div>
               <div class="ads-format-details">
-                <div class="single-ads-format-item">
+                <div
+                  class="single-ads-format-item active"
+                  id="home"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
                   <div class="ads-format-bg"></div>
                   <div class="ads-format-text">
                     <h3 class="title">POP-UNDER</h3>
                     <p>
                       This is one of the most popular ads. After user’s click, this ad opens landing page in
                       behind. So, the user experience is not hampered much.
+                    </p>
+                    <a href="" class="ads-btn"
+                      >Learn more <span><i class="fa-solid fa-up-right-from-square"></i></span>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="single-ads-format-item"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div class="ads-format-bg"></div>
+                  <div class="ads-format-text">
+                    <h3 class="title">BANNER AD</h3>
+                    <p>Choose between the available banner formats. Highly effective ad for visibility.</p>
+                    <a href="" class="ads-btn"
+                      >Learn more <span><i class="fa-solid fa-up-right-from-square"></i></span>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="single-ads-format-item"
+                  id="messages"
+                  role="tabpanel"
+                  aria-labelledby="messages-tab"
+                >
+                  <div class="ads-format-bg"></div>
+                  <div class="ads-format-text">
+                    <h3 class="title">NATIVE</h3>
+                    <p>
+                      Ad format with the image and the title, that perfectly fits into the content of the
+                      site. Native ads are placed in the most visible areas of the page and, thus, this format
+                      shows good results and the level of interaction.
+                    </p>
+                    <a href="" class="ads-btn"
+                      >Learn more <span><i class="fa-solid fa-up-right-from-square"></i></span>
+                    </a>
+                  </div>
+                </div>
+
+                <div
+                  class="single-ads-format-item"
+                  id="settings"
+                  role="tabpanel"
+                  aria-labelledby="settings-tab"
+                >
+                  <div class="ads-format-bg"></div>
+                  <div class="ads-format-text">
+                    <h3 class="title">SKIM</h3>
+                    <p>
+                      SKIM" is a link that a publisher inserts on a specific site element, and after clicking
+                      on it, an advertisement appears to the user. SKIM gives 100% control of your sold
+                      traffic amount, higher CR to advertisers and CPM rates to publishers.
                     </p>
                     <a href="" class="ads-btn"
                       >Learn more <span><i class="fa-solid fa-up-right-from-square"></i></span>
@@ -225,18 +343,45 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="section-title">
-              <h2>VERSATILE AD FORMATS</h2>
+              <h2>Title 1</h2>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <div class="testimonial-items-wrapper">
+            <div class="testimonial-items-wrapper owl-carousel">
               <div class="single-testimonial-item">
                 <div class="single-testimonial-item-wrapper">
                   <div class="testimonial-bg"></div>
                   <div class="testimonial-text">
                     <h3 class="title">Title 1</h3>
+                    <p class="sub-text">Hello, Here will be a text</p>
+                  </div>
+                </div>
+              </div>
+              <div class="single-testimonial-item">
+                <div class="single-testimonial-item-wrapper">
+                  <div class="testimonial-bg"></div>
+                  <div class="testimonial-text">
+                    <h3 class="title">Title 2</h3>
+                    <p class="sub-text">Hello, Here will be a text</p>
+                  </div>
+                </div>
+              </div>
+              <div class="single-testimonial-item">
+                <div class="single-testimonial-item-wrapper">
+                  <div class="testimonial-bg"></div>
+                  <div class="testimonial-text">
+                    <h3 class="title">Title 3</h3>
+                    <p class="sub-text">Hello, Here will be a text</p>
+                  </div>
+                </div>
+              </div>
+              <div class="single-testimonial-item">
+                <div class="single-testimonial-item-wrapper">
+                  <div class="testimonial-bg"></div>
+                  <div class="testimonial-text">
+                    <h3 class="title">Title 4</h3>
                     <p class="sub-text">Hello, Here will be a text</p>
                   </div>
                 </div>
@@ -322,9 +467,17 @@
 
     <!-- JS Here -->
     <script
+      src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+      integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI="
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
       crossorigin="anonymous"
     ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js
+    "></script>
+    <script src="assets/js/active.js"></script>
   </body>
 </html>
